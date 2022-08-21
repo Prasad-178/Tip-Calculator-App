@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+
+    margin-top: 10%;
+}
+
+.bigbox {
+    display: flex;
+    background-color: white;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.leftbox {
+    flex-direction: column;
+    display: flex;
+    justify-content: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.leftbox p{
+    text-align: left;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.billinput {
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.billinput p{
+    text-align: left;
+}
+
+.billinput div{
+    position: relative;
+    background-color: transparent;
+    text-align: left;
+}
+
+.billinput input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; 
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    text-align: left; 
+    height: 25px;
+    width: 160px;
+    text-align: right;
+    font-size: medium;
+}
+
+.billinput span{
+    position:absolute;
+    justify-self: left;
+} 
+
+.tip {
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.grid-container button {
+    background-color: hsl(184, 14%, 56%);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.people {
+    margin-top: 50px;
+}
+
+ .people svg {
+    margin-top: 10px;
+}
+
+.people input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; 
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    text-align: left; 
+    height: 25px;
+    width: 160px;
+    text-align: right;
+    font-size: medium;
+}
+
+
+
