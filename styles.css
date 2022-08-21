@@ -119,6 +119,15 @@ button:hover {
     grid-column-end: 2;
 }
 
+#percentInput {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
 .people {
     margin-top: 50px;
 }
@@ -157,7 +166,7 @@ button:hover {
 }
 
 .tipamount {
-    margin: 10px 10px 50px 10px;
+    margin: 10px 10px 30px 10px;
     font-size: 22px;
 }
 
@@ -177,7 +186,7 @@ button:hover {
 }
 
 .total {
-    margin: 0px 10px 50px 10px;
+    margin: 0px 10px 80px 10px;
     font-size: 22px;
 }
 
