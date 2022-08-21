@@ -170,7 +170,7 @@ button:hover {
     font-size: 22px;
 }
 
-.tipamount input {
+.tipAmt {
     border: none;
     background-color: transparent;
     resize: none;
