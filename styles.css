@@ -23,12 +23,14 @@ body {
 
 .bigbox {
     display: flex;
+    flex-direction: row;
     background-color: white;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 1%;
     margin-right: 25%;
     margin-left: 25%;
     border-radius: 20px;
-    padding: 2%;
+    padding: 2%;                                                                                                                    
 }
 
 .leftbox {
@@ -36,6 +38,8 @@ body {
     display: flex;
     justify-content: left;
     padding: 10px 20px 10px 20px;
+    /* padding-left: 2%; */
+    margin-right: 2.5%;
 }
 
 .leftbox p{
@@ -76,8 +80,10 @@ input[type=number] {
     background-color: hsl(185, 41%, 84%);
     border-radius: 5px;
     text-align: left; 
-    height: 25px;
-    width: 260px;
+    /* height: 25px; */
+    height: 60%;
+    /* width: 260px; */
+    width: 94%;
     text-align: center;
     font-size: medium;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,22 +95,30 @@ input[type=number] {
 } 
 
 .tip {
-    margin-top: 50px;
+    margin-top: 20%;
+    /* margin-top: 50px; */
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px; 
-    margin-top: 10px;
+    /* gap: 10px;  */
+    gap: 5%;
+    /* row-gap: 15px; */
+    row-gap: 35%;
+    /* margin-top: 10px; */
+    margin-top: 4%;
 }
 
 .grid-container button {
     color: white;
     background-color: hsl(183, 100%, 15%);
     border-radius: 10px;
-    width: 100px;
-    height: 30px;
+    /* width: 100px; */
+    width: 95%;
+    /* height: 30px; */
+    height: 12%;
+    height: 135%;
     font-weight: 600;
 }
 
@@ -122,18 +136,22 @@ button:hover {
 #percentInput {
     background-color: hsl(183, 100%, 15%);
     color: white;
-    width: 100px;
-    border-radius: 10px;
+    /* width: 100px; */
+    width: 30%;
+    /* border-radius: 10px; */
+    border-radius: 4%;
     text-align: center;
     font-weight: 700;
 }
 
 .people {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 20%;
 }
 
  .people svg {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 4%;
 }
 
 .people input {
@@ -144,7 +162,8 @@ button:hover {
     background-color: hsl(185, 41%, 84%);
     border-radius: 5px;
     text-align: left; 
-    height: 25px;
+    /* height: 25px; */
+    height: 50%;
     width: 260px;
     text-align: center;
     font-size: medium;
@@ -157,6 +176,7 @@ button:hover {
     padding: 10px 20px 10px 20px;
     background-color: hsl(183, 100%, 15%);
     border-radius: 10px;
+    margin-left: 2.5%;
 }
 
 .rightbox p {
@@ -216,5 +236,120 @@ button:hover {
     font-weight: 800;
 }
 
+@media screen and (max-width:640px) {
+    .people {
+        margin-top: 15%;
+    }
 
+    .grid-container {
+        margin-bottom: 7%;
+    }
+}
 
+@media screen and (max-width:645px) {
+    #inputbilljs {
+        margin-bottom: 10%;
+        height: 35%;
+        width: 70%;
+    }
+
+    .grid-container {
+        margin-bottom: 10%;
+    }
+
+    .ppl {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:637px) {
+    .bigbox {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:456px) {
+    .bigbox {
+        margin-right: 4.5%;
+        margin-left: 4.5%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .bigbox {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .tipAmt {
+        max-width: 135px;
+    }
+
+    .totalAmt {
+        max-width: 135px;
+        margin-left: 90px;
+    }
+
+    .rightbox {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .tipAmt {
+        max-width: 115px;
+    }
+
+    .totalAmt {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .tipAmt {
+        max-width: 100px;
+    }
+
+    .totalAmt {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width:618px) {
+    .ppl {
+        max-width: 94%;
+    }
+}
+
+@media screen and (max-width:1275px) {
+    body {
+        align-items: center;
+    }
+
+    .bigbox {
+        /* margin-right: 10%;
+        margin-left: 10%; */
+        flex-direction: column;
+    }
+
+    .tip {
+        margin-top: 5%;
+    }
+
+    .tipamount {
+        margin-bottom: 10px;
+    }
+
+    .total {
+        margin-bottom: 20px;
+    }
+
+    .people {
+        margin-top: 10%;
+    }
+    
+    .rightbox{
+        margin-top: 5%;
+    }
+}
