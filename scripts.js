@@ -22,7 +22,7 @@ var hideButton = document.querySelector('.customPercent');
 var showInputField = document.querySelector('#percentInput');
 let tipAmtPerPerson = 0;
 function resetFields() {
-    var tipAmtPerPerson = totBill/tipPercent/ppl;
+    var tipAmtPerPerson = totBill*tipPercent/ppl/100;
     // console.log(tipAmtPerPerson);
     var totalPerPerson = tipAmtPerPerson + totBill/ppl;
     // console.log(totalPerPerson);
