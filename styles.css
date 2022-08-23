@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: left;
     padding: 10px 20px 10px 20px;
+    /* max-width: 45%; */
     /* padding-left: 2%; */
     margin-right: 2.5%;
 }
@@ -134,14 +135,15 @@ button:hover {
 }
 
 #percentInput {
-    background-color: hsl(183, 100%, 15%);
     color: white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
     /* width: 100px; */
-    width: 30%;
-    /* border-radius: 10px; */
-    border-radius: 4%;
-    text-align: center;
-    font-weight: 700;
+    width: 95%;
+    /* height: 30px; */
+    height: 12%;
+    height: 135%;
+    font-weight: 600;
 }
 
 .people {
@@ -234,6 +236,18 @@ button:hover {
     border-radius: 10px;
     color: hsl(184, 14%, 56%);
     font-weight: 800;
+}
+
+@media screen and (max-width:1399px){
+    .leftbox {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .leftbox {
+        max-width: 45%;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -351,5 +365,10 @@ button:hover {
     
     .rightbox{
         margin-top: 5%;
+    }
+
+    .leftbox {
+        max-width: 80%;
+        margin-left: 5%;
     }
 }
